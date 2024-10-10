@@ -9,6 +9,14 @@ public class TugasJobsheet704 {
             System.out.println("Jenis Kendaraan\n1. Mobil\n2. Motor\n0. Keluar");
             System.out.print("Masukkan jenis kendaraan : ");
             jenis = sc.nextInt();
+            if(jenis > 2){
+                System.out.println("Kendaraan tidak valid");
+                continue;
+            }
+            if(jenis == 0){
+                System.out.println("Penjumlahan selesai");
+                break;
+            }
             System.out.print("Masukkan lama parkir (jam) : ");
             durasi = sc.nextInt();
 
@@ -21,8 +29,8 @@ public class TugasJobsheet704 {
             if(jenis == 2){
                 total += durasi* 2000;
             }
-        } while (jenis != 0);
-        
+        } while (true);
+
         System.out.println("Jumlah yang harus dibayar : Rp."+total);
 
     }

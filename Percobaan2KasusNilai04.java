@@ -21,6 +21,7 @@ public class Percobaan2KasusNilai04 {
 
             if(nilai <= 100 && nilai > 80){
                 System.out.println("Kategori huruf nilai mahasiswa ke-" + a + " adalah A") ;
+                System.out.println("Bagus Pertahankan Nilainya") ;
             }else if(nilai <= 80 && nilai > 73){
                 System.out.println("Kategori huruf nilai mahasiswa ke-" + a + " adalah B+") ;
             }else if(nilai <= 73 && nilai > 65){

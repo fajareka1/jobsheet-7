@@ -22,13 +22,14 @@ public class TugasJobsheet704 {
 
             if(durasi > 5){
                 total += 12500;
+            }else{
+                if(jenis == 1){
+                    total += durasi * 3000;
+                }else{
+                    total += durasi* 2000;
+                }
             }
-            if(jenis == 1){
-                total += durasi * 3000;
-            }
-            if(jenis == 2){
-                total += durasi* 2000;
-            }
+
         } while (true);
 
         System.out.println("Jumlah yang harus dibayar : Rp."+total);
